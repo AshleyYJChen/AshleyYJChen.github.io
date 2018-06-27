@@ -1,20 +1,14 @@
-html, body {
+html,body{
     height: 100%;
     padding: 0;
     margin: 0;
 }
-
-p, h1 {
+h1 {
     margin: 0;
 }
 
-.h1, h1{
-    font-size:50px;
-    padding-top: 235px;
-    padding-bottom: 100px;
-}
-
 .navbar{
+    background-color:gray;
     margin-bottom: 0 !important;
     text-align: center;
 }
@@ -33,13 +27,18 @@ p, h1 {
 
 .navbar .navbar-collapse{
     text-align: center;
+    padding: 0;
 }
 
 .navbar-brand {
-    text-align: center;
     float: none !important;
-    margin: 0; 
+    margin-left: 200px;
 }
+a.navbar-brand{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+    
 
 .navbar-brand:hover{
     color: #A7DBD8!important;
@@ -47,39 +46,114 @@ p, h1 {
 
 .poster {
     width: 100%;
-    height: calc(100% - 81px); 
-    background: linear-gradient(rgba(10,10,10,0.1), rgba(10,10,10,0.1)), 
+    height: calc(100% - 85px); 
+    background: linear-gradient(rgba(10,10,10,0.4), rgba(10,10,10,0.4)), 
                 no-repeat center;
-    background-image: url(../Desktop/bye.jpg);
-    background-size: cover;
+    background-image: url(./paper.jpg);
+    background-size: calc(cover - 20px);
     background-position: center;
     color:white;
-    text-align: center;
+
 }
 
 .poster-text {
+    padding:20%;
     text-align: center; 
+    letter-spacing: 2px;
+    font-size: 60px;
 }
 
-.intro {
- float:left;
- margin-left: 200px;   
+.aboutme {
+    background-image:url(./wallpaper.jpg);
+    width: 90%;
+    height: 88%;
+    margin-top:2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    background-position: center;
+}
+
+.aboutme h1{
+    margin-left: 80px;
+    padding-top: 50px;
+    font-size: 50px;
+    color:darkslategray;
+}
+
+.me-text {
+    margin-left: 80px;
+    padding-top: 50px;
+}
+
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius:0;
+}
+
+.card:hover{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+
+.card-body{
+    font-family:'Roberto Slab', serif;
+    padding: 0.5rem;
+    color:white;
+}
+.cardSet1{
+
+    background-color: #669999!important;
+}
+
+.cardSet2{
+    background-color: #EEA8A9!important;
+}
+.cardSet3{
+    background-color: #71A6D2!important;
+}
+
+h5.card-title{
+    font-size: 1.2rem;
+}
+
+p.card-text{
+    padding-bottom: 0.8rem;
+    line-height:1.2rem;
+}
+
+.btn{
+    float:right;
 }
 
 .contact {
-    background: black;
+    background: gray;
     text-align: center;
+}
 
+.connect {
+margin-left: 29px;
+color: white;
 }
 
 .fa {
     color: white;
+    margin-left: 30px;
 }
 
 .fa:hover{
     color: #A7DBD8;
 }
 
+
+/* intro */
+
+.intro{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: pink;
+}
 /* Huge Monitor*/
 @media (min-width: 1524px){
     .h1,h1{
@@ -87,7 +161,6 @@ p, h1 {
         font-size: 50px;
     }
 }
-
 
 
 
