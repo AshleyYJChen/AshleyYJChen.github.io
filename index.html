@@ -17,7 +17,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" >
     
 </head>
 
@@ -27,67 +27,125 @@
 
 <!-- Navigation Bar -->
     
-<nav class="navbar navbar-expand-sm navbar-dark justify-content-center sticky-top">
-    <a class = "navbar-brand1" href="./index.html"><i class='fa fa-home' aria-hidden='true'></i></a>
-    <a class="navbar-brand" href= "./profile.html"> Profile</a>
-    <a class="navbar-brand"  href= "./projects.html"> Projects</a>
-    <a class="navbar-brand" href="./files/Eason_Chang_Resume.pdf" target="_blank"> Resume</a> 
-</nav>
+    
+<nav class="navbar navbar-expand-lg navbar-light justify-content-center sticky-top"  style="background-color:rgba(252, 249, 249, 0.945)">
+       
+        <a class = "navbar-brand" href="./index.html"><i class='fa fa-home' aria-hidden='true'> </i></a>
+        <a class="navbar-brand" href= "#intro"> Profile</a>
+        <a class="navbar-brand"  href= "#me"> Projects</a>
+        <a class="navbar-brand" href="./files/Eason_Chang_Resume.pdf" target="_blank"> Resume</a> 
+    </nav>
 
+ 
 
 <!-- Poster -->
 <div class ="poster">
     <!-- ABOUT ME -->
+
     <div>
-        <h1 class ="poster-text"><b> Ashley Chen</b></h1>
+        <h1 class ="poster-text">
+                <div class = "goop"></div>
+                <div class = "goop two"></div>
+                <div class = "goop three"></div>
+                <div class = "goop four"></div>
+                <div class = "goop five"></div>
+                <a href="#intro">
+                    <b> Ashley Chen</b></h1>
+                </a>
     </div> 
 </div>
-   
-<!-- second page -->
-<div class ="aboutme">
-    <!-- ABOUT ME -->
-    <h1> Welcome!</h1>
-      
-    <div class="container mt-5">
-       <div class="card-deck">
-         <div class="card cardSet1">
-            <div class="card-body">
-                <img class="img-fluid" src="./hi.jpg" alt="Card Image">
-                <h5 class="card-title">About Me</h5>
-                <p class="card-text mt-3">Look at who I am rightttt</p>
-                <a href="./profile.html" class="btn btn-md btn-dark">About Me</a>
-             </div>
-        </div>
-
-        <div class="card cardSet2">
-            <div class="card-body">
-                <img class="img-fluid" src="./hi.jpg" alt="Card Image">
-                <h5 class="card-title"> My Resume </h5>
-                <p class="card-text mt-3">Check this nonexistent resume</p>
-                <a href="./resume.html" class="btn btn-md btn-dark">Read</a>
-            </div>
-        </div>
-
-        <div class="card cardSet3">
-            <div class="card-body">
-                <img class="img-fluid" src="./hi.jpg" alt="Card Image">
-                <h5 class="card-title"> Projects </h5>
-                <p class="card-text mt-3">Check this nonexistent project</p>
-                <a href="./resume.html" class="btn btn-md btn-dark">See More</a>
-            </div>
-        </div>
-      </div>
-    </div>
-</div>
- 
        
+
+<!-- intro -->
+<div class = "aboutpage">
+        <h2>Who I Am</h2>
+<div id= "intro" class="grid">
+
+    <div class="box a">
+        <img class="img-fluid" src="./mee.jpg" alt="Card Image">
+    </div>
+    
+    <div class="box b">
+        <p>H1! I'm Ashley. Oh sorry, I was too into html.. hhahahaha  I meant Hi! I am a 2nd year at UCSD studying cognitive science
+            with a specialization in HCI. I plan on becoming an user interface and user experience designer. I am interested
+            in creating eye catching yet simple and usable designs, and I am working towards learning more about this field.
+            
+            I love nature and I believe in the benefit of incorporating nature into designs. I also enjoy 
+            checking out architecture and interior design, especially from Japan. I'm recently looking more into weightlifting and playing badminton. 
+
+            I look forward to being involved in organizations in order to showcase my social and
+            organizational skills.    
+        </p>
+    </div>
+
+    <div class="box c">
+            Experience: HTML Java CSS User Research Wireframing Prototyping svg javascript sass idk..
+           <br> EXTRA! Recommended book: 
+            The girl with all the gifts  
+     </div>
+
+</div>  
+
+
+<div id = "me" class ="aboutme">
+    
+        <div class = "header"> Projects </div>
+                <div class="container">
+        
+                   <div class="card-deck">
+                     <div class="card cardSet1" style="width: 18rem;">
+                            <img class="card-img-top" src="./chick.png" alt="Card Image">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3"> Stickers </h5>   
+                            <p class="card-text mt-3"> Using CSS and HTML, I created a series of adorable 
+                                sticker designs that can be printed out and placed on binders, waterbottles, and other 
+                                objects. The cute designs should please the eye, and they were fun to create.
+                            </p>
+                         </div>
+                    </div>
+                    
+                    <div class="card cardSet2" style="width: 18rem;">
+                            <img class="card-img-top" src="./tetris.png" alt="Card Image">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3"> Tetris </h5>
+                            <p class="card-text mt-3"> This is a remake of the popular Tetris game using Java
+                                and JavaFX. Some important points to keep in mind while making the game is how
+                                there is a limit to the movement and rotation of the tile pieces and to clear lines properly. 
+                                Now, one can play their personal tetris game on their computers!
+                            </p>
+                        </div>
+                    </div>
+        
+        
+                    <div class="card cardSet3" style="width: 18rem;">
+                            <img class="card-img-top" src="./hello.png" alt="Card Image">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">Wireframe</h5>
+                            <p class="card-text mt-3"> In preparation for a potential app, I have
+                                wireframed the website layout. While designing the website, I strived to create
+                                the most simple, straightforward home and login layouts to accomodate the targeted
+                                users.
+                                </p>
+                        </div>
+                    </div>
+        
+                  </div>
+                  <div class= "resume">
+                  <button type="button" class="btn btn-outline-secondary btn-block">Resume</button>
+                </div>
+                </div>
+                </div>
+
+
+
+
 <!-- Contact --> 
 
 <div class = "contact">
     <h6 class="connect">Connect with Me</h6>
     <a href="https://www.linkedin.com/in/easonychang" target='_blank'><i class='fa fa-linkedin-square fa-2x' aria-hidden='true'></i></a>
     <a href="https://github.com/AshleyYJChen" target='_blank'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a>
-    <a href="mailto:ashleychen2009@gmail.com"><i class='fa fa-envelope fa-2x' aria-hidden='true'></i></a>
+    <a href="mailto:chen.ashleyyj@gmail.com"><i class='fa fa-envelope fa-2x' aria-hidden='true'></i></a>
 </div>
 
 

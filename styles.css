@@ -1,4 +1,4 @@
-html,body{
+html,body {
     height: 100%;
     padding: 0;
     margin: 0;
@@ -7,70 +7,97 @@ h1 {
     margin: 0;
 }
 
-.navbar{
-    background-color:gray;
-    margin-bottom: 0 !important;
-    text-align: center;
+p{
+    font-size: 16pt;
 }
 
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
+a {
+    color:black !important;
     
 }
 
-.nav > li > a:hover, .nav > li > a:focus {
-  /*background-color: #00CED1!important;*/
-  color: #A7DBD8!important;
-  text-decoration: none;
+a:hover{
+    color:  #A7DBD8!important;
+}
+a:link{
+    text-decoration: none !important;
 }
 
-.navbar .navbar-collapse{
+/*header and footer*/
+.navbar{
     text-align: center;
-    padding: 0;
 }
 
 .navbar-brand {
-    float: none !important;
-    margin-left: 200px;
+    padding: 4rem;
 }
+
 a.navbar-brand{
     font-size: 16px;
     letter-spacing: 2px;
-}
-    
+} 
 
 .navbar-brand:hover{
     color: #A7DBD8!important;
 }
 
+.btn{
+    float:right;
+}
+
+/*home*/
+
+.goop{
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50px;
+    top: 90px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 80px solid rgb(245, 127, 146);
+    z-index:2;
+}
+
+.goop.two{
+    top: 140px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 80px solid#A7DBD8;
+}
+
 .poster {
     width: 100%;
-    height: calc(100% - 85px); 
-    background: linear-gradient(rgba(10,10,10,0.4), rgba(10,10,10,0.4)), 
-                no-repeat center;
-    background-image: url(./paper.jpg);
-    background-size: calc(cover - 20px);
-    background-position: center;
-    color:white;
-
+    /*height: calc(100% - 85px); */
+    height:100%;
+    max-width: 100%;
+    background: rgba(252, 249, 249, 0.945);
+    z-index:1;
 }
 
 .poster-text {
     padding:20%;
     text-align: center; 
     letter-spacing: 2px;
+
     font-size: 60px;
 }
+.poster-text:hover{
+    color: #A7DBD8!important;
+}
+/*second page*/
 
 .aboutme {
-    background-image:url(./wallpaper.jpg);
-    width: 90%;
-    height: 88%;
-    margin-top:2%;
-    margin-bottom: 2%;
-    margin-left: 5%;
+    background: rgba(252, 249, 249, 0.945);
+    width: auto;
+    height: auto;
     background-position: center;
+
+}
+
+.container{
+    padding-top: 100px;
+    padding-bottom: 70px;
 }
 
 .aboutme h1{
@@ -85,32 +112,36 @@ a.navbar-brand{
     padding-top: 50px;
 }
 
-.card {
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius:0;
-}
-
-.card:hover{
+/*hover{
     -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
     -moz-box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
     box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
+}*/
+
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius:0;
+    margin-bottom: 4rem!important;
+   
 }
 
 .card-body{
-    font-family:'Roberto Slab', serif;
+   /* font-family:'Roberto Slab', serif;*/
     padding: 0.5rem;
     color:white;
+   
 }
 .cardSet1{
-
-    background-color: #669999!important;
+    
+    background-color:  #b19bc9!important;
 }
 
 .cardSet2{
-    background-color: #EEA8A9!important;
+    background-color: #9cd1af!important;
+
 }
 .cardSet3{
-    background-color: #71A6D2!important;
+    background-color: #f1d9e3!important;
 }
 
 h5.card-title{
@@ -122,38 +153,98 @@ p.card-text{
     line-height:1.2rem;
 }
 
-.btn{
-    float:right;
+.header{
+  color: gray;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  font-size: 24pt;
+
+}
+
+/* intro */
+
+.aboutpage {
+    padding-top: 4rem;
+    background:rgba(252, 249, 249, 0.945);
+}
+.aboutpage h2{
+    color: gray;
+   padding-left: 4rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 2em;
+    padding: 4em;
+    padding-top: 6em;
+    padding-bottom: 4em;
+    background:rgba(252, 249, 249, 0.945);
+    
+}
+
+.grid>div{
+    opacity: 0.775;
+    background-color: pink;
+
+}
+
+.box{
+    border-radius: 40px;
+    padding: 6em;
+}
+
+
+.a {
+    grid-column: 1/4;
+    grid-row: 1;
+   
+}
+
+.b {
+    grid-column: 4;
+    grid-row: 1;
+}
+.c {
+    grid-column: 1/5;
+    grid-row: 2/4;
+
+
+}
+
+.btn {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+.resume{
+    padding-bottom:5rem;
 }
 
 .contact {
-    background: gray;
+    background: rgba(252, 249, 249, 0.945);
     text-align: center;
+    position: fixed;
+    z-index: 100; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
 }
 
 .connect {
-margin-left: 29px;
-color: white;
+    padding-top: 0.5rem;
+color: black;
 }
 
-.fa {
-    color: white;
-    margin-left: 30px;
-}
 
 .fa:hover{
     color: #A7DBD8;
 }
 
 
-/* intro */
-
-.intro{
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: pink;
+.fa{
+    color:black;
+    padding-right: 0.5rem;
 }
+
 /* Huge Monitor*/
 @media (min-width: 1524px){
     .h1,h1{
