@@ -2,18 +2,33 @@ html,body {
     height: 100%;
     padding: 0;
     margin: 0;
+   
 }
 h1 {
     margin: 0;
+    font-family:'Montserrat', sans-serif;
 }
 
 p{
-    font-size: 16pt;
+    font-size: 12pt;
+    line-height: 2.5rem;
+    font-family:'Montserrat', sans-serif;
 }
 
 a {
+    
     color:black !important;
     
+}
+
+h5.card-title{
+    font-size: 1.5rem !important;
+    font-family:'Montserrat', sans-serif;
+}
+
+p.card-text{
+    line-height: 1.75rem !important;
+    font-family:'Montserrat', sans-serif;
 }
 
 a:hover{
@@ -33,6 +48,7 @@ a:link{
 }
 
 a.navbar-brand{
+    font-family:'Montserrat', sans-serif;
     font-size: 16px;
     letter-spacing: 2px;
 } 
@@ -76,6 +92,7 @@ a.navbar-brand{
 }
 
 .poster-text {
+    font-family:'Montserrat', sans-serif;
     padding:20%;
     text-align: center; 
     letter-spacing: 2px;
@@ -92,15 +109,16 @@ a.navbar-brand{
     width: auto;
     height: auto;
     background-position: center;
-
 }
 
 .container{
     padding-top: 100px;
     padding-bottom: 70px;
+    position: center;
 }
 
 .aboutme h1{
+    font-family:'Montserrat', sans-serif;
     margin-left: 80px;
     padding-top: 50px;
     font-size: 50px;
@@ -108,6 +126,7 @@ a.navbar-brand{
 }
 
 .me-text {
+    font-family:'Montserrat', sans-serif;
     margin-left: 80px;
     padding-top: 50px;
 }
@@ -118,6 +137,10 @@ a.navbar-brand{
     box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
 }*/
 
+p.exp{
+    font-size: 20pt;
+}
+
 .card {
     border: 1px solid rgba(0,0,0,.125);
     border-radius:0;
@@ -126,22 +149,24 @@ a.navbar-brand{
 }
 
 .card-body{
-   /* font-family:'Roberto Slab', serif;*/
+   font-family:'Montserrat', sans-serif;
     padding: 0.5rem;
     color:white;
    
 }
 .cardSet1{
-    
+    opacity: 0.875;
     background-color:  #b19bc9!important;
 }
 
 .cardSet2{
-    background-color: #9cd1af!important;
+    opacity: 0.875;
+    background-color: #A7DBD8!important;
 
 }
 .cardSet3{
-    background-color: #f1d9e3!important;
+    opacity: 0.875;
+    background-color:rgb(245, 127, 146)!important;
 }
 
 h5.card-title{
@@ -154,11 +179,11 @@ p.card-text{
 }
 
 .header{
-  color: gray;
+  color: darkslategray;
   padding-top: 4rem;
   padding-left: 4rem;
   font-size: 24pt;
-
+  font-family:'Montserrat', sans-serif;
 }
 
 /* intro */
@@ -168,8 +193,9 @@ p.card-text{
     background:rgba(252, 249, 249, 0.945);
 }
 .aboutpage h2{
-    color: gray;
-   padding-left: 4rem;
+    font-family:'Montserrat', sans-serif;
+    color: darkslategray;
+    padding-left: 4rem;
 }
 .grid{
     display: grid;
@@ -183,12 +209,17 @@ p.card-text{
 }
 
 .grid>div{
-    opacity: 0.775;
-    background-color: pink;
+    opacity: 0.875;
+    background-color: rgb(248, 161, 176);
 
 }
 
+.exp{
+ text-decoration:  rgb(245, 189, 198) underline;
+}
+
 .box{
+    font-family:'Montserrat', sans-serif;
     border-radius: 40px;
     padding: 6em;
 }
@@ -208,7 +239,18 @@ p.card-text{
     grid-column: 1/5;
     grid-row: 2/4;
 
+}
 
+.skill {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(233, 145, 160, 0.849);
+    border-radius: 50px;
+    float: left;
+    margin: 20px 100px;
+    margin-bottom: 30px;
+    margin-right: 90px;
+    padding: 4px 16px;
 }
 
 .btn {
@@ -217,6 +259,7 @@ p.card-text{
 }
 .resume{
     padding-bottom:5rem;
+    font-family:'Montserrat', sans-serif;
 }
 
 .contact {
@@ -227,6 +270,7 @@ p.card-text{
     bottom: 0; 
     left: 0;
     width: 100%;
+    font-family:'Montserrat', sans-serif;
 }
 
 .connect {
