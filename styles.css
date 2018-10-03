@@ -2,7 +2,11 @@ html,body {
     height: 100%;
     padding: 0;
     margin: 0;
-   
+
+}
+
+body{
+    overscroll-behavior-y : none;
 }
 h1 {
     margin: 0;
@@ -220,8 +224,8 @@ p.card-text{
 
 .box{
     font-family:'Montserrat', sans-serif;
-    border-radius: 40px;
-    padding: 6em;
+    border-radius: 30px;
+    padding: 4em;
 }
 
 
@@ -287,6 +291,10 @@ color: black;
 .fa{
     color:black;
     padding-right: 0.5rem;
+}
+
+.img-fluid{
+    border-radius: 20px;
 }
 
 /* Huge Monitor*/
