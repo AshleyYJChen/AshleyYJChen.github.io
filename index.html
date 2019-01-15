@@ -1,225 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <title>Ashley Chen</title>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Ashley Chen</title>
+  <meta charset="UTF-8">
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <!-- jQuery -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
- 
-<!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-<!-- Font Awesome -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <!-- jQuery -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  
+  <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/index.css" >
-    
+  <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+      <link rel="stylesheet" type="text/css" href="./css/index.css" >
+      
 </head>
 
 
 <body>
+ 
+  <!-- Poster -->
+  <div class ="poster">
 
-
-<!-- Navigation Bar -->
-    
-<nav class="navbar navbar-expand-lg navbar-light justify-content-center sticky-top"  style="background-color:rgba(252, 249, 249, 0.945)">
-        <a class = "navbar-brand" href="./index.html"><i class='fa fa-home' aria-hidden='true'> </i></a>
-        <a class="navbar-brand" href= "#intro"> Profile</a>
-        <a class="navbar-brand"  href= "#me"> Projects</a>
-        <a class="navbar-brand" href="Ashley_Chen_Resume.pdf" target="_blank target="> Resume</a> 
+    <!-- Navigation Bar --> 
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <a class = "navbar-brand" href="./index.html"> Home</a>
+      <a class="navbar-brand" href= "#intro"> About </a>
+      <a class="navbar-brand" href="Ashley_Chen_Resume.pdf" target="_blank target="> Resume</a> 
     </nav>
 
- 
-
-<!-- Poster -->
-<div class ="poster">
-    <!-- ABOUT ME -->
-
-    <div>
-        <h1 class ="poster-text">
-                <div class = "goop"></div>
-                <div class = "goop two"></div>
-                <div class = "goop three"></div>
-                <div class = "goop four"></div>
-                <div class = "goop five"></div>
-                <a href="#intro">
-                    <b> Ashley Chen</b></h1>
-                </a>
-    </div> 
-</div>
+    <h1 class ="poster-text">
+      <div class = "goop"></div>
+      <div class = "goop two"></div>
+      <div class = "goop three"></div>
+      <div class= "myprofile">
+        <a href="#intro">
+          <h1><b> Ashley Chen</b></h1>
+        </a>
+      </div>
+      <div class="myintro">
+        <h4>I'm a UCSD student majoring in Human Computer Interaction and planning to go into UX Design. I look forward to gaining insight from any challenge.</h4>
+      </div>
+  </div>
        
+  <!-- Projects -->
+  <div id="list" class="listing">
+    <div class="container projects">  
+      <div class="row projectlist">          
+        <div class="bellybins listed">
+          <a href="./bigbelly.html" target="_self" class="btn btn-block nochange"> <h2>Big Belly Redesign</h2></a>
+        </div>
+      </div>
+      <div class="row projectlist ">     
+        <div class="designleap listed">
+            <a href="./designleap.html" target="_self" class="btn btn-block nochange"> <h2>Design Leap Service Design</h2></a>
+        </div>
+      </div>
+      <div class="row projectlist">     
+        <div class="rento listed">
+            <a href="./rento.html" target="_self" class="btn btn-block nochange"> <h2>Rento Phone App</h2></a>
+        </div>
+      </div>
+      <div class="row projectlist">     
+        <div class="CSSstickers listed">
+            <a href="./bigbelly.html" target="_self" class="btn btn-block nochange"> <h2>CSS Stickers</h2></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- intro -->
-<div class = "aboutpage">
+
+  <!-- intro -->
+  <div id = "intro" class="description">
+    <div class = "container aboutme">
+      <div class="row profiletitle">
+        <br><br><br><br>
         <h2>Who I Am</h2>
-<div id= "intro" class="grid">
+      </div>
+      <div class="row">
+        <div class="myface col-4">
+          <img class="img-fluid mypicture" src="./me.jpg" alt="Card Image">
+        </div>
+        <div class="myinfo col-8">
+            <br><br><br>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; H1! Ashley here. Oh sorry, I was too into html.. I meant Hi! (Very punny). I am a 2nd year at UCSD studying Cognitive Science
+                with a specialization in  <b>HCI</b> and minor in Computer Science. My plan is to be an user interface and user experience designer. I am interested
+                in <b>creating eye-catching yet simple and usable designs </b>, and I am working to learn more about this field. <br>
+          
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A focus of mine is to incorporate nature as a basis to build designs. I also enjoy
+                checking out architecture and interior design, particularly Japanese styles. Recently, I have been into playing badminton and weightlifting. 
+                <br><br><br><br> <br><br><br><br>
+              </p>
+        </div>
 
-    <div class="box a">
-        <img class="img-fluid" src="./me.jpg" alt="Card Image">
+      </div>
     </div>
-    
-    <div class="box b">
-        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; H1! Ashley here. Oh sorry, I was too into html.. I meant Hi! (Very punny). I am a 2nd year at UCSD studying Cognitive Science
-            with a specialization in  <b>HCI</b>. My plan is to be an user interface and user experience designer. I am interested
-            in <b>creating eye-catching yet simple and usable designs </b>, and I am working towards learning more about this field. <br>
-            
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I have experience with leading groups and organizing events in my church and volunteering in the Cognitive Science Student Association. ALso, I look forward to being involved in more organizations in order to showcase my social and
-            organizational skills.  <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A focus of mine is to incorporate nature as a basis to build designs. I also enjoy
-            checking out architecture and interior design, particularly Japanese styles. Recently, I have into playing badminton. 
-  
-        </p>
-    </div>
-
-    <div class="box c">
-
-            <p class= "exp" >Experience</p> 
-            <div class="skill-tag">
-                    <div class="skill">Java</div>
-                    <div class="skill">CSS3</div>
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">HTML5</div>
-                </div>    
-     </div>
-
-</div>  
+  </div>
 
 
-<div id = "me" class ="aboutme">
-    
-        <div class = "header"> Projects </div>
-                <div class="container">
-        
-                   <div class="card-deck">
-                     <div class="card cardSet1" style="width: 18rem;">
-                            <div id="carouselthree" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img class="d-block w-100" src="./chick.png" alt="First slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img class="d-block w-100" src="./cactus.png" alt="Second slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img class="d-block w-100" src="./pump.png" alt="Third slide">
-                                      </div>
-                                    </div>
-                                    <a class="carousel-control-prev" href="#carouselthree" role="button" data-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#carouselthree" role="button" data-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Next</span>
-                                    </a>
-                                  </div>
-                        <div class="card-body">
-                            <h5 class="card-title mt-3"> <b>Stickers</b> </h5>   
-                            <p class="card-text mt-3"> Using CSS and HTML, I created a series of adorable 
-                                sticker designs that can be printed out and placed on binders, waterbottles, and other 
-                                objects. These designs should please the eye and attract attention from others.
-                            </p>
-                         </div>
-                    </div>
-                    
-                    <div class="card cardSet2" style="width: 18rem;">
-                            <div id="carouselone" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img class="d-block w-100" src="./tetris.png" alt="First slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img class="d-block w-100" src="./tetris2.png" alt="Second slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img class="d-block w-100" src="./tetris3.png" alt="Third slide">
-                                      </div>
-                                    </div>
-                                    <a class="carousel-control-prev" href="#carouselone" role="button" data-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#carouselone" role="button" data-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Next</span>
-                                    </a>
-                                  </div>
-                        <div class="card-body">
-                            <h5 class="card-title mt-3"> <b>Tetris</b> </h5>
-                            <p class="card-text mt-3"> This is a remake of the popular Tetris game using Java
-                                and JavaFX. Some important points to keep in mind while making the game is how
-                                there is a limit to the movement and rotation of the tile pieces and to clear lines properly. 
-                                Now, one can play their personal tetris game on their computers!
-                            </p>
-                        </div>
-                    </div>
-        
-        
-                    <div class="card cardSet3" style="width: 18rem;">
-                       
-                            <!--<div id="carouseltwo" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img class="d-block w-100" src="./tetris.png" alt="First slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img class="d-block w-100" src="./chick.png" alt="Second slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img class="d-block w-100" src="./chick.png" alt="Third slide">
-                                      </div>
-                                    </div>
-                                    <a class="carousel-control-prev" href="#carouseltwo" role="button" data-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#carouseltwo" role="button" data-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Next</span>
-                                    </a>
-                                  </div> -->
-                        <div class="card-body">
-                           
-                            <h5 class="card-title mt-3"> <b>Potential Project</b></h5>
-                            <p class="card-text mt-3"> In preparation for a potential app, I have created a
-                                wireframe for the website layout. While designing the website, I strived to create
-                                a simple, straightforward home and login layout to accomodate the targeted
-                                users.
-                                </p>
-                        </div>
-                    </div>
-        
-                  </div>
-                  <div class= "resume">
-                  <a href="Ashley_Chen_Resume.pdf" target="_blank" class="btn btn-outline-secondary btn-block">  My Resume</a>
-                </div>
-                </div>
-                </div>
+  <!-- Contact --> 
+
+  <div class = "contact">
+      <h6 class="connect">Connect with Me</h6>
+      <a href="https://www.linkedin.com/in/ashleyyjchen" target='_blank'><i class='fa fa-linkedin-square fa-2x' aria-hidden='true'></i></a>
+      <a href="https://github.com/AshleyYJChen" target='_blank'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a>
+      <a href="mailto:chen.ashleyyj@gmail.com"><i class='fa fa-envelope fa-2x' aria-hidden='true'></i></a>
+  </div>
 
 
-
-
-<!-- Contact --> 
-
-<div class = "contact">
-    <h6 class="connect">Connect with Me</h6>
-    <a href="https://www.linkedin.com/in/ashleyyjchen" target='_blank'><i class='fa fa-linkedin-square fa-2x' aria-hidden='true'></i></a>
-    <a href="https://github.com/AshleyYJChen" target='_blank'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a>
-    <a href="mailto:chen.ashleyyj@gmail.com"><i class='fa fa-envelope fa-2x' aria-hidden='true'></i></a>
-</div>
-
-
-<!-- js -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>

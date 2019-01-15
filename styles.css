@@ -1,54 +1,66 @@
+/* General settings */
 html,body {
     height: 100%;
     padding: 0;
     margin: 0;
-
 }
 
-body{
-    overscroll-behavior-y : none;
+body {
+    overscroll-behavior-y: none;
 }
+
 h1 {
     margin: 0;
+    padding-bottom: 5px;
     font-family:'Montserrat', sans-serif;
 }
 
-p{
+h2 {
+    margin: 0;
+    font-family:'Montserrat', sans-serif !important;
+} 
+
+h3 {
+    margin: 0;
+    color:rgb(95, 94, 94) !important;
+}
+
+h4 {
+    margin: 0;
+    font-family:'Montserrat', sans-serif !important;
+    color:rgb(95, 94, 94) !important;
+}
+
+p {
     font-size: 12pt;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
+    font-family:'Montserrat', sans-serif;
+    margin: 0;
+}
+
+li {
     font-family:'Montserrat', sans-serif;
 }
 
-a {
-    
-    color:black !important;
-    
+a {  
+    color:black!important;
 }
 
-h5.card-title{
-    font-size: 1.5rem !important;
-    font-family:'Montserrat', sans-serif;
+a:hover {
+    color:#A7DBD8!important;
 }
-
-p.card-text{
-    line-height: 1.75rem !important;
-    font-family:'Montserrat', sans-serif;
-}
-
-a:hover{
-    color:  #A7DBD8!important;
-}
-a:link{
+a:link {
     text-decoration: none !important;
 }
 
-/*header and footer*/
-.navbar{
-    text-align: center;
+.btn{
+    height:100%;
 }
 
+/*header and footer*/
 .navbar-brand {
-    padding: 4rem;
+    padding: 2em;
+    background:transparent !important;
 }
 
 a.navbar-brand{
@@ -61,90 +73,213 @@ a.navbar-brand{
     color: #A7DBD8!important;
 }
 
-.btn{
-    float:right;
+.contact {
+    background: rgba(252, 249, 249, 0.945) !important;
+    text-align: center;
+    position: fixed;
+    z-index: 100; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    font-family:'Montserrat', sans-serif;
+}
+
+.connect {
+    padding-top: 0.5rem;
+    color: black;
 }
 
 /*home*/
-
+.poster {
+    width: 100%;
+    height:85%;
+    max-width: 100%;
+    background: rgba(252, 249, 249, 0.945);
+    z-index:1;
+}
+.myprofile:hover {
+    color: #A7DBD8!important;
+}
+.poster-text {
+    font-family:'Montserrat', sans-serif;
+    padding:20%;
+    text-align: left; 
+    letter-spacing: 2px;
+    font-size: 60px;
+}
 .goop{
     position: absolute;
     width: 0;
     height: 0;
     left: 50px;
-    top: 90px;
+    top: 110px;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 80px solid rgb(245, 127, 146);
-    z-index:2;
 }
 
 .goop.two{
-    top: 140px;
+    top: 160px;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 80px solid#A7DBD8;
 }
 
-.poster {
-    width: 100%;
-    /*height: calc(100% - 85px); */
-    height:100%;
-    max-width: 100%;
+/* projects */
+.listing {
     background: rgba(252, 249, 249, 0.945);
-    z-index:1;
 }
 
-.poster-text {
+.projectlist {
+    padding-bottom: 30px;
+    height: 300px;
+}
+
+.listed {
+    padding-top:100px;
+}
+.listed:hover {
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+
+.bellybins {
+    background:rgba(245, 189, 198,0.945);
+    border-radius:5px;
+    width:100%;
+}
+
+.designleap {
+    background:rgba(167, 219, 216, 0.945);
+    border-radius:5px;
+    width:100%;
+}
+
+.rento {
+    background:rgba(177, 155, 201, 0.945);
+    border-radius:5px;
+    width:100%;
+}
+
+.CSSstickers {
+    background: rgba(250, 244, 174, 0.945);
+    border-radius:5px;
+    width:100%;
+}
+
+.nochange:hover {
+    color: black !important;
+}
+
+/*about me*/
+.description {
+    padding-top:100px;
+    background: rgba(252, 249, 249, 0.945);
+}
+
+.mypicture {
+    border-radius: 20px;
+}
+
+/* Big Belly Redesign */
+
+.topcolor {
+    background-image: linear-gradient(rgba(245, 189, 198,0.945), rgba(252, 249, 249, 0.945));
+}
+
+.bodycolor {
+    background: rgba(252, 249, 249, 0.945);
+}
+.title {
+padding-bottom: 80px;
+}
+.HMW{
+    padding-left:110px;
+}
+
+.darker {
+    background: rgba(241, 240, 240, 0.719);
+    padding-left: 150px;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.fullredesign {
+    padding-left: 50px;
+}
+
+.finaldesign {
+    padding-left: 50px;
+}
+
+.seemore {
+    width:30%;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-left: 550px;
+}
+.moretext{
+    padding-top:10px;
+}
+
+/* design leap */
+.toptwo {
+    background-image: linear-gradient(rgba(167, 219, 216, 0.945), rgba(252, 249, 249, 0.945));
+}
+/* Huge Monitor*/
+@media (min-width: 1524px){
+    .h1,h1{
+        padding-top: 330px;
+        font-size: 50px;
+    }
+}
+
+/* Mobile Portrait*/
+@media (max-height: 480px) {
+    .h1,h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 425px){
+    .h1,h1{
+        font-size: 30px;
+    }
+}
+
+/*
+h5.card-title{
+    font-size: 1.5rem !important;
     font-family:'Montserrat', sans-serif;
-    padding:20%;
-    text-align: center; 
-    letter-spacing: 2px;
-
-    font-size: 60px;
-}
-.poster-text:hover{
-    color: #A7DBD8!important;
-}
-/*second page*/
-
-.aboutme {
-    background: rgba(252, 249, 249, 0.945);
-    width: auto;
-    height: auto;
-    background-position: center;
 }
 
+p.card-text{
+    line-height: 1.75rem !important;
+    font-family:'Montserrat', sans-serif;
+}
+
+.a {
+    grid-column: 1/4;
+    grid-row: 1;
+   
+}
+
+.b {
+    grid-column: 4;
+    grid-row: 1;
+}
+.c {
+    grid-column: 1/5;
+    grid-row: 2/4;
+
+}
 .container{
     padding-top: 100px;
     padding-bottom: 70px;
     position: center;
 }
-
-.aboutme h1{
-    font-family:'Montserrat', sans-serif;
-    margin-left: 80px;
-    padding-top: 50px;
-    font-size: 50px;
-    color:darkslategray;
-}
-
-.me-text {
-    font-family:'Montserrat', sans-serif;
-    margin-left: 80px;
-    padding-top: 50px;
-}
-
-/*hover{
-    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
-    -moz-box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
-    box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
-}*/
-
-p.exp{
-    font-size: 20pt;
-}
-
 .card {
     border: 1px solid rgba(0,0,0,.125);
     border-radius:0;
@@ -181,16 +316,6 @@ p.card-text{
     padding-bottom: 0.8rem;
     line-height:1.2rem;
 }
-
-.header{
-  color: darkslategray;
-  padding-top: 4rem;
-  padding-left: 4rem;
-  font-size: 24pt;
-  font-family:'Montserrat', sans-serif;
-}
-
-/* intro */
 
 .aboutpage {
     padding-top: 4rem;
@@ -229,22 +354,6 @@ p.card-text{
 }
 
 
-.a {
-    grid-column: 1/4;
-    grid-row: 1;
-   
-}
-
-.b {
-    grid-column: 4;
-    grid-row: 1;
-}
-.c {
-    grid-column: 1/5;
-    grid-row: 2/4;
-
-}
-
 .skill {
     font-size: 16px;
     font-weight: bold;
@@ -256,67 +365,4 @@ p.card-text{
     margin-right: 90px;
     padding: 4px 16px;
 }
-
-.btn {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-}
-.resume{
-    padding-bottom:5rem;
-    font-family:'Montserrat', sans-serif;
-}
-
-.contact {
-    background: rgba(252, 249, 249, 0.945);
-    text-align: center;
-    position: fixed;
-    z-index: 100; 
-    bottom: 0; 
-    left: 0;
-    width: 100%;
-    font-family:'Montserrat', sans-serif;
-}
-
-.connect {
-    padding-top: 0.5rem;
-color: black;
-}
-
-
-.fa:hover{
-    color: #A7DBD8;
-}
-
-
-.fa{
-    color:black;
-    padding-right: 0.5rem;
-}
-
-.img-fluid{
-    border-radius: 20px;
-}
-
-/* Huge Monitor*/
-@media (min-width: 1524px){
-    .h1,h1{
-        padding-top: 330px;
-        font-size: 50px;
-    }
-}
-
-
-
-
-/* Mobile Portrait*/
-@media (max-height: 480px) {
-    .h1,h1{
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 425px){
-    .h1,h1{
-        font-size: 30px;
-    }
-}
+*/
