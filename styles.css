@@ -55,18 +55,19 @@ a:link {
 
 .btn{
     height:100%;
+    white-space: normal;
 }
 
 /*header and footer*/
 .navbar-brand {
-    padding: 2em;
+    padding: 2%;
     background:transparent !important;
 }
 
 a.navbar-brand{
     font-family:'Montserrat', sans-serif;
     font-size: 16px;
-    letter-spacing: 2px;
+    letter-spacing: 2%;
 } 
 
 .navbar-brand:hover{
@@ -107,6 +108,17 @@ a.navbar-brand{
     letter-spacing: 2px;
     font-size: 60px;
 }
+.triangles{
+    width: auto;
+    position:absolute;
+    height: auto;
+    left: 5%;
+    top: 15%!important;
+    margin:0;
+}
+
+
+/*
 .goop{
     position: absolute;
     width: 0;
@@ -124,6 +136,7 @@ a.navbar-brand{
     border-right: 50px solid transparent;
     border-top: 80px solid#A7DBD8;
 }
+*/
 
 /* projects */
 .listing {
@@ -244,132 +257,15 @@ padding-bottom: 80px;
 }
 
 /* Mobile Portrait*/
-@media (max-height: 480px) {
-    .h1,h1{
-        font-size: 30px;
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
     }
-}
-
-@media (max-width: 425px){
-    .h1,h1{
-        font-size: 30px;
+    .triangles{
+        position:auto;
     }
-}
-
-/*
-h5.card-title{
-    font-size: 1.5rem !important;
-    font-family:'Montserrat', sans-serif;
-}
-
-p.card-text{
-    line-height: 1.75rem !important;
-    font-family:'Montserrat', sans-serif;
-}
-
-.a {
-    grid-column: 1/4;
-    grid-row: 1;
-   
-}
-
-.b {
-    grid-column: 4;
-    grid-row: 1;
-}
-.c {
-    grid-column: 1/5;
-    grid-row: 2/4;
-
-}
-.container{
-    padding-top: 100px;
-    padding-bottom: 70px;
-    position: center;
-}
-.card {
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius:0;
-    margin-bottom: 4rem!important;
-   
-}
-
-.card-body{
-   font-family:'Montserrat', sans-serif;
-    padding: 0.5rem;
-    color:white;
-   
-}
-.cardSet1{
-    opacity: 0.875;
-    background-color:  #b19bc9!important;
-}
-
-.cardSet2{
-    opacity: 0.875;
-    background-color: #A7DBD8!important;
-
-}
-.cardSet3{
-    opacity: 0.875;
-    background-color:rgb(245, 127, 146)!important;
-}
-
-h5.card-title{
-    font-size: 1.2rem;
-}
-
-p.card-text{
-    padding-bottom: 0.8rem;
-    line-height:1.2rem;
-}
-
-.aboutpage {
-    padding-top: 4rem;
-    background:rgba(252, 249, 249, 0.945);
-}
-.aboutpage h2{
-    font-family:'Montserrat', sans-serif;
-    color: darkslategray;
-    padding-left: 4rem;
-}
-.grid{
-    display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-gap: 2em;
-    padding: 4em;
-    padding-top: 6em;
-    padding-bottom: 4em;
-    background:rgba(252, 249, 249, 0.945);
-    
-}
-
-.grid>div{
-    opacity: 0.875;
-    background-color: rgb(248, 161, 176);
-
-}
-
-.exp{
- text-decoration:  rgb(245, 189, 198) underline;
-}
-
-.box{
-    font-family:'Montserrat', sans-serif;
-    border-radius: 30px;
-    padding: 4em;
-}
-
-
-.skill {
-    font-size: 16px;
-    font-weight: bold;
-    background-color: rgba(233, 145, 160, 0.849);
-    border-radius: 50px;
-    float: left;
-    margin: 20px 100px;
-    margin-bottom: 30px;
-    margin-right: 90px;
-    padding: 4px 16px;
-}
-*/
+    html{
+        font-size:14px;
+    }
+  }
