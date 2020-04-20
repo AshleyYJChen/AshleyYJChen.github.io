@@ -111,6 +111,7 @@ a.navbar-brand{
     letter-spacing: 2px;
     font-size: 60px;
     padding-top:10%;
+    text-align:left;
 }
 .triangles{
     width: auto;
