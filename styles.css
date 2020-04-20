@@ -98,15 +98,19 @@ a.navbar-brand{
     background: rgba(252, 249, 249, 0.945);
     z-index:1;
 }
+.myprofile{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .myprofile:hover {
     color: #A7DBD8!important;
 }
 .poster-text {
     font-family:'Montserrat', sans-serif;
-    padding-top:140px;
-    text-align: left; 
     letter-spacing: 2px;
     font-size: 60px;
+    padding-top:10%;
 }
 .triangles{
     width: auto;
