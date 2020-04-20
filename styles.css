@@ -169,6 +169,18 @@ a.navbar-brand{
     width:100%;
 }
 
+.cogs120{
+    background: rgba(250, 244, 174, 0.945);
+    border-radius:5px;
+    width:100%;
+}
+
+.cogs108{
+    background:rgba(177, 155, 201, 0.945);
+    border-radius:5px;
+    width:100%;
+}
+
 .rento {
     background:rgba(177, 155, 201, 0.945);
     border-radius:5px;
@@ -244,6 +256,26 @@ padding-bottom: 80px;
     padding-top:10px;
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after image containers */
+  .row_back::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row_back{
+    padding-bottom:5em;
+}
+  .art{
+      border-radius:5px;
+  }
 /* design leap */
 .toptwo {
     background-image: linear-gradient(rgba(167, 219, 216, 0.945), rgba(252, 249, 249, 0.945));
