@@ -229,7 +229,7 @@ padding-bottom: 80px;
 .darker {
     background: rgba(241, 240, 240, 0.719);
     padding-left: 150px;
-    padding-top:100px;
+    padding-top:100px;      
     padding-bottom:100px;
 }
 
@@ -279,6 +279,14 @@ padding-bottom: 80px;
   .art{
       border-radius:5px;
   }
+
+
+  /** Hoopers **/
+
+  .topcolorh{
+    background-image: linear-gradient(rgba(232, 189, 245, 0.945), rgba(252, 249, 249, 0.945));
+  }
+  .wire{padding-right:130px;}
 /* design leap */
 .toptwo {
     background-image: linear-gradient(rgba(167, 219, 216, 0.945), rgba(252, 249, 249, 0.945));
